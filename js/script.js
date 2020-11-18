@@ -18,15 +18,13 @@ $(document).ready(function() {
         if ($("#day").val() == "none" || $("#month").val() == "none") {
             isValid = false;
             $("#dateError").html("Please enter a valid date.<br />");
-            $("#dateError").css("color", "red");
             return isValid;
         };
-        
+
         for (i = 0; i < invalidDates.length; i++) {
             if (userDate === invalidDates[i] || $("#day").val() == "none" || $("#month").val() == "none") {
                 isValid = false;
                 $("#dateError").html("Please enter a valid date.<br />");
-                $("#dateError").css("color", "red");
                 return isValid;
             };
         }
