@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("#submitDate").on("click", function() {
         $("#dateError").html("");
         $("#output").html("");
-        if(!isFormValid()){
+        if (!isFormValid()) {
             return;
         };
         $("#output").html("Searching...");
@@ -15,12 +15,12 @@ $(document).ready(function() {
         let userDate = $("#day").val() + "/" + $("#month").val();
         var invalidDates = ["31/4", "31/6", "31/9", "31/11", "30/2", "31/2"];
 
-        for (i = 0; i < invalidDates.length; i++){
-        if (userDate === invalidDates[i] || $("#day").val()  == "none" || $("#month").val()  == "none") {
-            isValid = false;
-            $("#dateError").html("Please enter a valid date.<br />");
-            $("#dateError").css("color", "red");
-        };
+        for (i = 0; i < invalidDates.length; i++) {
+            if (userDate === invalidDates[i] || $("#day").val() == "none" || $("#month").val() == "none") {
+                isValid = false;
+                $("#dateError").html("Please enter a valid date.<br />");
+                $("#dateError").css("color", "red");
+            };
         }
         return isValid;
     };
@@ -33,19 +33,19 @@ $(document).ready(function() {
         let response = await fetch(url);
         let data = await response.json();
         $("#output").html("");
-        jQuery.each(data, function(key, value){
-            if (userDate == value.birthday){
-            dateFound = true;
-            $("#output").append(`
+        jQuery.each(data, function(key, value) {
+            if (userDate == value.birthday) {
+                dateFound = true;
+                $("#output").append(`
                 <div class='villagerResult row'>
                 <div class='col'><img src='${value["icon_uri"]}' alt='${value.name["name-USen"]}' /></div>
                 <div class='col'><span class='villagerName'>${value.name["name-USen"]}</span><br />
                 <span class='villagerBday'>${value["birthday-string"]}</span></div>
             </div>`);
-        };
+            };
         });
 
-        if (dateFound == false){
+        if (dateFound == false) {
             $("#output").html("No villagers found. :(");
         }
     };

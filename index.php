@@ -15,7 +15,7 @@
 <body class="text-center">
     <div class="jumbotron"><h1>Animal Crossing Birthdays</h1></div>
     <div id="main" class="container">
-        <p>The world of Animal Crossing is populated with all sorts of colorful characters, each with their own birthdates!
+        <p>The world of Animal Crossing is populated with all sorts of colorful villagers, each with their own birthdates!
         <br />Find out if you share a birthday with one of them!</p>
         <form id="signupForm">
 
