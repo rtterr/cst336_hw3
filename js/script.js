@@ -6,6 +6,7 @@ $(document).ready(function() {
         if(!isFormValid()){
             return;
         };
+        $("#output").html("Searching...");
         findVillager();
     });
 
@@ -31,7 +32,7 @@ $(document).ready(function() {
         let url = `https://acnhapi.com/v1/villagers/`;
         let response = await fetch(url);
         let data = await response.json();
-
+        $("#output").html("");
         jQuery.each(data, function(key, value){
             if (userDate == value.birthday){
             dateFound = true;
