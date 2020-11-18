@@ -79,9 +79,9 @@
     </div>
 
     <footer>
-  CST336 Internet Programming.<br />
+  By Rowena Terrado for CST336 Internet Programming.<br />
   Website is for educational purposes only.<br />
-API by <a href="https://www.acnhapi.com/">ACNH API</a>.
+API by <a href="http://www.acnhapi.com/" target="_blank">ACNH API</a>.
 <br />Animal Crossing is a registered trademark of Nintendo.
 <br />This site in no way claims ownership of any intellectual property associated with Animal Crossing.
 </footer>
