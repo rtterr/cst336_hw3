@@ -13,7 +13,7 @@ $(document).ready(function() {
     function isFormValid() {
         var isValid = true;
         let userDate = $("#day").val() + "/" + $("#month").val();
-        var invalidDates = ["31/4", "31/6", "31/9", "31/11", "30/2", "31/2"];
+        let invalidDates = ["31/4", "31/6", "31/9", "31/11", "30/2", "31/2"];
 
         if ($("#day").val() == "none" || $("#month").val() == "none") {
             isValid = false;
