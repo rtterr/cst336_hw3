@@ -60,6 +60,10 @@ footer {
     margin-top: 10px;
 }
 
+#dateError{
+    color:red;
+}
+
 .villagerResult {
     margin: 10px;
     border-radius: 20px;
