@@ -1,0 +1,89 @@
+body {
+    background-color: #3bb28a;
+    margin-bottom: 20px;
+    background-image: url("../img/leaves.jpg");
+}
+
+.jumbotron {
+    background-color: #9edcdb;
+    background-image: url("../img/waves.jpg");
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 4em;
+    color: #fdcf4f;
+    -webkit-text-stroke: 1px #683a19;
+    text-shadow:
+        3px 3px 0 #683a19,
+        -1px -1px 0 #683a19,
+        1px -1px 0 #683a19,
+        -1px 1px 0 #683a19,
+        1px 1px 0 #683a19;
+    line-height: 1em;
+}
+
+#main {
+    background-color: #f8f8f0;
+    border-radius: 25px;
+    border: 10px solid #a3ead2;
+    padding: 2em;
+}
+
+a {
+    color: #9c2a26;
+}
+
+a:hover {
+    color: #4d2521;
+}
+
+input[type=button] {
+    font-weight: bold;
+    background-color: #3bb28a;
+    color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 0px solid white;
+}
+
+
+footer {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+#output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.villagerResult {
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #89caa2;
+    padding: 10px;
+    background-image: url("../img/grass.jpg");
+    width:50%;
+}
+
+.villagerResult .col {
+    align-self: center;
+    justify-content: center;
+}
+
+.villagerName {
+    color: #683a19;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.villagerBday {
+    color: #235d4a;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
