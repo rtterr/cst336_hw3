@@ -20,7 +20,7 @@
         <form id="signupForm">
 
             <select id="month" name="month">
-                <option>Month</option>
+                <option value="none">Month</option>
                 <option value="1">January</option>
                 <option value="2">February</option>
                 <option value="3">March</option>
@@ -36,7 +36,7 @@
             </select>
 
             <select id="day" name="day">
-                <option>Day</option>
+                <option value="none">Day</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

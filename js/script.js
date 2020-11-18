@@ -16,7 +16,7 @@ $(document).ready(function() {
         var invalidDates = ["31/4", "31/6", "31/9", "31/11", "30/2", "31/2"];
 
         for (i = 0; i < invalidDates.length; i++){
-        if (userDate === invalidDates[i]) {
+        if (userDate === invalidDates[i] || $("#day").val()  == "none" || $("#month").val()  == "none") {
             isValid = false;
             $("#dateError").html("Please enter a valid date.<br />");
             $("#dateError").css("color", "red");
