@@ -28,7 +28,7 @@ $(document).ready(function() {
         let userDate = $("#day").val() + "/" + $("#month").val();
         let dateFound = false;
 
-        let url = `http://acnhapi.com/v1/villagers/`;
+        let url = `https://acnhapi.com/v1/villagers/`;
         let response = await fetch(url);
         let data = await response.json();
 
